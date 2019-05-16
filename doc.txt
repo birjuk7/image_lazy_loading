@@ -1,0 +1,32 @@
+Image lazy loading
+
+
+Images are critical for every website and application today. Whether it is marketing banners, product images or logos, it is impossible to imagine a website without images. Sadly though, images are large in size making them the single biggest contributor to the page size. As per the latest HTTP Archive data, the median page size on desktops is 1511 KB. Images make up for almost 650 KB of that size, roughly 45% of the total page size. Now, since we cannot do away with images, we need to make our web pages load really fast with them. In this guide, we will talk about lazy loading images, a technique that helps improve the page load time and reduce page size while still retaining all the images on the page.
+
+What is Lazy Loading Images?
+Lazy Loading Images refers to a set of techniques in web and application development that defer the loading of images on a page to a later point in time – when those images are actually needed instead of loading them up front. These techniques help in improving performance, better utilization of the device’s resources and reducing associated costs.
+
+The word “lazy” in the English language is often attributed to the act of avoiding work as long as possible.
+
+Similarly, lazy loading defers the loading of resources on the page as long as they are not needed. Instead of loading these resources as soon as the page loads, which is what normally happens, we defer the load of these resources to a later time when they are actually needed.
+
+The technique of lazy loading can be applied to almost all the resources on a page. For example, in a single page application, if a JS file is not needed until later, it is best not to load it initially. If an image is not needed up front, load it later when it is actually needed.
+
+Why go for lazy loading images at all?
+Lazy Loading defers the loading of an image that is not needed on the page immediately. An image that is not visible to the user when the page loads, is loaded later when the user scrolls and the image actually become visible. If the user never scrolls, an image that is not visible to the user never gets loaded.
+
+This has two main advantages.
+
+1. Performance Improvement
+
+The is the most important one for you as a website administrator – better performance and load time. With lazy loading, you are reducing the number of images that need to be loaded on the page initially. Lesser resource requests mean lesser bytes to download and lesser competition for the limited network bandwidth available to the user. This ensures that the device is able to download and process the remaining resources much faster. Hence, the page becomes usable much earlier compared to the case without lazy loading.
+
+2. Cost reduction
+
+The second benefit for you is in terms of delivery costs. Image delivery, or delivery of any other asset, is usually charged on the basis of the number of bytes transferred. As mentioned earlier, with lazy loading, if the image is not visible, it never gets loaded. Thus, you reduce the total bytes delivered on the page. Especially for users that bounce off the page or interact only with the top portion of the page. This reduction in bytes transferred from your delivery network reduces delivery costs. This will become more apparent as we explore lazy loading in the coming sections.
+
+Which images can be lazy loaded?
+The basic idea of lazy loading is simple – defer loading anything that is not needed right now. For images, it usually translates to, any image that is not visible to the user up front, can be lazy loaded. As the user scrolls down the page, the image placeholders start coming into viewport (visible part of the webpage). We trigger the load for these images when they become visible.
+
+
+
